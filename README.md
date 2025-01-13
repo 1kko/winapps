@@ -92,6 +92,10 @@ Note: The officially configured application list below is fueled by the communit
     <td><img src="apps/vs-enterprise-2019/icon.svg" width="100"></td><td>Visual Studio<br>(2019 - Ent|Pro|Com)</td>
   </tr>
   <tr>
+    <td><img src="apps/hancom/icon.svg" width="100"></td><td>HWP 2020<br>(Hancom HWP)</td>
+    <td><img src="apps/kakaotalk/icon.svg" width="100"></td><td>KakaoTalk<br>(Messenger)</td>
+  </tr>
+  <tr>
     <td><img src="icons/windows.svg" width="100"></td><td>Windows<br>(Full RDP session)</td>
     <td>&nbsp;</td><td>&nbsp;</td>
   </tr>
