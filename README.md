@@ -14,6 +14,23 @@ WinApps was created as an easy, one command way to include apps running inside a
 - Files in your home directory are accessible via the `\\tsclient\home` mount inside the VM
 - You can right click on any files in your home directory to open with an application, too
 
+### VMWare Integration
+Apart from using qemu/kvm(virt-manager) as VM, it is also possible to utilize VMWare Workstation Pro for backend, as of May, 2024, it became free for personal use.
+Basically you need to cherry-pick the actions required for Windows VM inside, such as,
+1. Set `RDP_USER` and `RDP_PASS` to your VM's username and password.
+2. Install registry `https://github.com/Fmstrat/winapps/blob/main/install/RDPApps.reg` in your VM.
+
+Lastly, you need to set IP address which pointing to your VM in `winapps.conf`
+- uncomment and set `RDP_IP` in `~/.config/winapps/winapps.conf` with your VM's IP Address.
+
+### Additional VM Configuration
+While base configuration works great, but I found setting following is even better.
+- Disable Power Management, which sometimes goes sleep mode on idle.
+  - Start > Settings > System > Power & battery > choose `Never` on Put to cumputer to sleep.
+- Disable Aero Snap feature in Win11, which is not really needed and makes black boxes while dragging windows apps.
+  - Start > Settings > System > Multitasking > Turn off `Snap windows`
+
+
 ## Currently supported applications
 ### WinApps supports ***ANY*** installed application on your system.
 
